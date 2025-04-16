@@ -5,7 +5,7 @@ def check_password_strength(password):
     score = 0
     feedback = []
 
-    # Length Check
+   
     if len(password) >= 8:
         score += 1
     else:
@@ -23,7 +23,7 @@ def check_password_strength(password):
     else:
         feedback.append("❌ Add at least one number (0-9).")
     
-    # Special Character Check
+  
     if re.search(r"[!@#$%^&*]", password):
         score += 1
     else:
